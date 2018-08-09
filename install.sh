@@ -5,8 +5,8 @@ echo "Downloading & Installing Golang.. \n"
 # Golang quick install
 
  apt-get update
- wget https://storage.googleapis.com/golang/go1.9.2.linux-amd64.tar.gz
- sudo tar -xvf go1.9.2.linux-amd64.tar.gz
+ wget https://dl.google.com/go/go1.10.3.linux-amd64.tar.gz
+ sudo tar -xvf go1.10.3.linux-amd64.tar.gz
  sudo mv go /usr/local
  echo "export GOROOT=/usr/local/go" >> /root/.bashrc
  echo "export GOPATH=$HOME/Projects" >> /root/.bashrc
@@ -16,7 +16,7 @@ echo "Downloading & Installing Golang.. \n"
 go get github.com/BurntSushi/toml
 rm -rf go/
 
-rm -rf go1.9.2.linux-amd64.tar.gz
+rm -rf go1.10.3.linux-amd64.tar.gz
 mkdir -p /etc/nshield/ipsets/
 
 apt-get install -y jq software-properties-common ipset
